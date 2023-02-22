@@ -470,3 +470,82 @@ header {
   width: 65px;
   margin-top: -50px;
 }
+
+/* testimonials css */
+.testm {
+  text-align: center;
+  padding: 40px 0 80px 0;
+}
+.testm-text h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.testm-text span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #bb0021 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.testm-boxes {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 4em;
+  margin-top: 40px;
+  overflow-x: scroll;
+}
+.testm-boxes::-webkit-scrollbar {
+  display: none;
+}
+
+.testm-boxes .main-col-4 {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 30px #0000000d;
+  padding: 20px 40px 20px 40px;
+  border-radius: 8px;
+}
+
+.main-col-4 {
+  flex: 0 0 auto;
+}
+.main-col-4 .testm-text-star h6 {
+  font-size: 19px;
+
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.main-col-4 .testm-p p {
+  font-size: 14px;
+  font-family: "PF Handbook Pro Regular";
+  letter-spacing: 0px;
+  color: #76787b;
+}
+
+.main-col-4 {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  align-items: center;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  background-color: #76787b;
+  padding: 40px 20px 40px 20px;
+}
+.ul-footer {
+  list-style: none;
+  line-height: 2rem;
+}
