@@ -192,6 +192,8 @@ header {
 
   opacity: 1;
 }
+
+/*  main banner with boxes */
 #main-banner {
   background: url(./images/Rectangle\ 370.jpg);
   background-repeat: no-repeat;
@@ -265,4 +267,206 @@ header {
   font-family: "PF Handbook Pro Regular";
   letter-spacing: 0px;
   color: #76787b;
+}
+/* nps image calculator */
+
+.nps {
+  background: url(./images/Mask\ Group\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  padding: 40px 0px 40px 0px;
+}
+
+.nps-box {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  background: url(./images/Mask\ Group\ 3.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  align-items: center;
+}
+
+.nps-box .nps-text h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+.nps-box .nps-text .sp {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #c91429 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+
+  opacity: 1;
+}
+
+.nps-box .nps-text p {
+  font-size: 20px;
+  font-family: "PF Handbook Pro Regular";
+  margin-top: 10px;
+  margin-bottom: 15px;
+  letter-spacing: 0px;
+
+  color: #76787b;
+  letter-spacing: 0px;
+}
+
+.nps-box .nps-text a {
+  background: #c91429 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 2px solid #c8142a;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 8px 20px 8px 20px;
+  font-family: "PF Handbook Pro Regular";
+}
+
+.nps-box .nps-text img {
+  width: 17px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+/* main banner 2 */
+#main-banner2 {
+  background: url(./images/Group\ 1567.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 40px 0;
+  align-items: center;
+  margin: 10px 10px 0 10px;
+}
+
+.main-banner-text-space2 {
+  display: flex;
+  justify-content: space-around;
+}
+#main-banner2 .text-text2 h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#main-banner2 .text-text2 p {
+  font-size: 20px;
+  font-family: "PF Handbook Pro Regular";
+  margin-top: 10px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#main-banner2 .text-text2 span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.main-banner-sub2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+  align-items: center;
+  gap: 3em;
+}
+
+.main-banner-sub2 .main-col2 {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 30px #0000000d;
+  border-radius: 8px;
+  height: 100px;
+  width: 270px;
+  padding: 20px 6px 20px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.main-banner-sub2 .main-col2 img {
+  height: 65px;
+  width: 65px;
+}
+
+.main-banner-sub2 .main-col2 p {
+  font-size: 16px;
+  font-family: "PF Handbook Pro Regular";
+  letter-spacing: 0px;
+  color: #76787b;
+}
+/* abs boxess main */
+.abs-boxes .main-col3 h6 {
+  font-size: 19px;
+
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+.abs-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  margin-top: 40px;
+}
+
+.abs-boxes .main-col3 {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 30px #0000000d;
+  border-radius: 8px;
+  text-align: center;
+  padding: 24px;
+}
+
+.abs-boxes .main-col3 p {
+  font-size: 14px;
+  font-family: "PF Handbook Pro Regular";
+  letter-spacing: 0px;
+  color: #76787b;
+}
+.abs-main {
+  padding: 60px 0 80px 0;
+  background: transparent linear-gradient(180deg, #f8f8f8 0%, #ffffff00 100%) 0%
+    0% no-repeat padding-box;
+}
+.abs-heading {
+  text-align: center;
+}
+.abs-heading h2 {
+  font-size: 35px;
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.abs-heading p {
+  font-size: 20px;
+  font-family: "PF Handbook Pro Regular";
+  margin-top: 10px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.abs-heading span {
+  padding: 3px 25px 3px 25px;
+  margin: 10px 0 10px 0;
+  background: #bb0021 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.abs-boxes .main-col3 img {
+  height: 65px;
+  width: 65px;
+  margin-top: -50px;
 }
