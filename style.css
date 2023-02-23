@@ -61,7 +61,92 @@ header {
 
 .nav_links li a:hover {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
+}
+/* arrow */
+.dropbtn .arrow {
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+.dropbtn .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropbtn:hover .arrow {
+  border: solid #c8142a;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 4px;
+}
+.dropbtn:hover .down {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+/* dropdown navigation */
+.dropbtn {
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+}
+.dropdown .dropbtn:hover {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 9px;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown .dropdown-content:hover {
+  animation: fade 1s ease 2s forwards;
+}
+
+/* dropdown navigation end */
+
+.btntop {
+  background: #f7a600 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  padding: 1px 4px 1px 4px;
+  text-decoration: none;
+  color: black;
 }
 
 .bar {
@@ -73,14 +158,14 @@ header {
 }
 .bar h6 {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "PF Handbook Pro Bold";
 }
 
 .bar2 h6 {
   background: #c7222a;
 
-  font-size: 14px;
+  font-size: 16px;
   font-family: "PF Handbook Pro Bold";
   letter-spacing: 0px;
   color: #ffffff;
@@ -88,10 +173,137 @@ header {
   margin: 0 10px 0 10px;
 }
 
+@media all and (max-width: 1100px) {
+  .bar2 h6 {
+    background: #c7222a;
+    font-size: 16px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #ffffff;
+    padding: 8px;
+    margin: 0;
+    border-top: 1px solid #dbdbdb;
+  }
+}
+
+/* mobile menu css */
+@media all and (max-width: 1100px) {
+  .topheader {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+}
+@media all and (min-width: 1101px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7222a;
+    align-items: center;
+    padding: 20px;
+  }
+  .mobile-menu .menu-image img {
+    width: 60%;
+  }
+  .burger-icon {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+  }
+  .burger-icon .human img {
+    width: 30px;
+  }
+  .burger-icon .burger img {
+    width: 40px;
+  }
+  /* box on click hamburger */
+  .mobile-box-inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c7222a;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mobile-box-inner .mobile-box-image img {
+    width: 60%;
+  }
+  .mobile-box-inner .burger-cross img {
+    width: 30px;
+  }
+
+  .topbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: px 0 px 0;
+    background-color: #c7222a;
+  }
+  .drop1-mob .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 20px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  .drop1-mob:hover .dropbtn {
+    background-color: #7f2221;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 20px;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    float: right;
+  }
+
+  .dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+  }
+
+  .drop1-mob .active {
+    display: block;
+  }
+
+  .drop1-mob:hover .dropdown-content {
+    display: block;
+  }
+}
+/* first banner css starts here */
 #banner-top {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #banner-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .banner-text h1 {
@@ -99,12 +311,24 @@ header {
   font-family: "PF Handbook Pro Bold";
   letter-spacing: 0px;
 }
-
 .banner-text h1 span {
   font-size: 70px;
   font-family: "PF Handbook Pro Bold";
   letter-spacing: 0px;
   color: #bb0021;
+}
+@media only screen and (max-width: 600px) {
+  .banner-text h1 {
+    font-size: 60px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+  }
+  .banner-text h1 span {
+    font-size: 60px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #bb0021;
+  }
 }
 
 .banner-text p {
@@ -119,15 +343,15 @@ header {
 }
 
 .banner-btns .a1 {
-  font-size: 12px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 14px;
+  font-family: "PF Handbook Pro Thin";
   letter-spacing: 0px;
   color: #fafafa;
-  padding: 6px 10px 6px 10px;
+  padding: 8px 16px 8px 16px;
   background: transparent linear-gradient(249deg, #99a26f 0%, #44583f 100%) 0%
     0% no-repeat padding-box;
   box-shadow: 0px 7px 9px #00000029;
-  border: 2px solid #44583f;
+  /* border: 2px solid #44583f; */
   border-radius: 4px;
   opacity: 1;
   text-decoration: none;
@@ -146,15 +370,26 @@ header {
 
 .banner-btns .a2 {
   font-size: 12px;
-  font-family: "PF Handbook Pro Regular";
+  font-family: "PF Handbook Pro Bold";
   letter-spacing: 0px;
   color: #44583f;
-  padding: 6px 10px 6px 10px;
+  padding: 8px 16px 8px 16px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 2px solid #44583f;
   border-radius: 4px;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .banner-video img {
+    width: 100%;
+  }
+  .banner-text {
+    padding: 20px;
+  }
+}
+
+/* second banner starts here */
 #image-text {
   display: flex;
   justify-content: space-evenly;
@@ -167,6 +402,21 @@ header {
   width: 415px;
   z-index: 99;
 }
+@media only screen and (max-width: 600px) {
+  #image-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-image img {
+    height: 260px;
+    width: 100%;
+    z-index: 99;
+    padding: 20px;
+  }
+  .text-text {
+    padding: 20px;
+  }
+}
 
 .text-text h2 {
   font-size: 35px;
@@ -177,7 +427,7 @@ header {
 
 .text-text p {
   font-size: 20px;
-  font-family: "PF Handbook Pro Regular";
+  font-family: "PF Handbook Pro Thin";
   margin-top: 10px;
   letter-spacing: 0px;
   color: #76787b;
@@ -207,6 +457,14 @@ header {
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (max-width: 600px) {
+  .main-banner-text-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
 #main-banner .text-text h2 {
   font-size: 35px;
   font-family: "PF Handbook Pro Bold";
@@ -215,8 +473,8 @@ header {
 }
 
 #main-banner .text-text p {
-  font-size: 20px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
   margin-top: 10px;
   letter-spacing: 0px;
   color: #ffffff;
@@ -238,12 +496,22 @@ header {
   align-items: center;
   gap: 4em;
 }
+@media only screen and (max-width: 600px) {
+  .main-banner-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+    align-items: center;
+    gap: 4em;
+  }
+}
 
 .main-banner-sub .main-col {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 30px #0000000d;
   border-radius: 8px;
-  height: 100px;
+  height: 110px;
   width: 260px;
   padding: 20px 0 20px 20px;
 }
@@ -263,8 +531,8 @@ header {
 }
 
 .main-banner-sub .main-col p {
-  font-size: 14px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 16px;
+  font-family: "PF Handbook Pro Thin";
   letter-spacing: 0px;
   color: #76787b;
 }
@@ -290,6 +558,20 @@ header {
   padding: 20px;
   align-items: center;
 }
+@media only screen and (max-width: 600px) {
+  .nps-box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background: url(./images/Mask\ Group\ 3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    align-items: center;
+  }
+}
 
 .nps-box .nps-text h2 {
   font-size: 35px;
@@ -308,8 +590,8 @@ header {
 }
 
 .nps-box .nps-text p {
-  font-size: 20px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
   margin-top: 10px;
   margin-bottom: 15px;
   letter-spacing: 0px;
@@ -329,10 +611,29 @@ header {
   font-family: "PF Handbook Pro Regular";
 }
 
-.nps-box .nps-text img {
-  width: 17px;
-  height: 16px;
+.nps-box .nps-text i {
   margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .nps .nps-image img {
+    width: 200px;
+    margin-left: -40px;
+  }
+  .nps-box .nps-text h2 {
+    font-size: 17px;
+    font-family: "PF Handbook Pro Bold";
+    letter-spacing: 0px;
+    color: #000000;
+  }
+  .nps-box .nps-text p {
+    font-size: 12px;
+    font-family: "PF Handbook Pro Thin";
+
+    letter-spacing: 0px;
+
+    color: #76787b;
+    letter-spacing: 0px;
+  }
 }
 
 /* main banner 2 */
@@ -357,8 +658,8 @@ header {
 }
 
 #main-banner2 .text-text2 p {
-  font-size: 20px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
   margin-top: 10px;
   letter-spacing: 0px;
   color: #ffffff;
@@ -399,8 +700,8 @@ header {
 }
 
 .main-banner-sub2 .main-col2 p {
-  font-size: 16px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
   letter-spacing: 0px;
   color: #76787b;
 }
@@ -418,6 +719,15 @@ header {
   gap: 4em;
   margin-top: 40px;
 }
+@media only screen and (max-width: 600px) {
+  .abs-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 40px;
+  }
+}
 
 .abs-boxes .main-col3 {
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -428,8 +738,8 @@ header {
 }
 
 .abs-boxes .main-col3 p {
-  font-size: 14px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
   letter-spacing: 0px;
   color: #76787b;
 }
@@ -449,8 +759,8 @@ header {
 }
 
 .abs-heading p {
-  font-size: 20px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
   margin-top: 10px;
   letter-spacing: 0px;
   color: #333333;
@@ -523,8 +833,8 @@ header {
 }
 
 .main-col-4 .testm-p p {
-  font-size: 14px;
-  font-family: "PF Handbook Pro Regular";
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
   letter-spacing: 0px;
   color: #76787b;
 }
@@ -546,9 +856,37 @@ header {
   background-color: #76787b;
   padding: 40px 40px 40px 40px;
 }
+@media only screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .ul-footer {
   list-style: none;
   line-height: 2rem;
+  margin-top: 5px;
+}
+
+.ul-footer a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.copy-text p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.copy-phone p {
+  font-size: 17px;
+  font-family: "PF Handbook Pro Thin";
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 
 .footer-part-1 h6,
@@ -574,6 +912,12 @@ header {
   background-color: #58595b;
   padding: 40px 40px 40px 40px;
 }
+@media only screen and (max-width: 600px) {
+  .footer2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .copyright {
   display: flex;
@@ -582,6 +926,13 @@ header {
   background-color: #58595b;
   padding: 20px 40px 20px 40px;
   border-top: 1px solid #e2e2e2;
+}
+@media only screen and (max-width: 600px) {
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 .copy-social-text {
   display: flex;
