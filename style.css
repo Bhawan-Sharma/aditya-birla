@@ -540,12 +540,67 @@ header {
 
 .footer {
   display: flex;
-  justify-content: center;
-  gap: 4em;
+  justify-content: space-evenly;
+  gap: 1em;
+
   background-color: #76787b;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 40px 40px 40px;
 }
 .ul-footer {
   list-style: none;
   line-height: 2rem;
+}
+
+.footer-part-1 h6,
+.footer-part-2 h6,
+.footer-part-3 h6,
+.footer-part-4 h6,
+.footer-part-5 h6,
+.footer-part-6 h6,
+.footer-part-7 h6 {
+  font-size: 16px;
+
+  font-family: "PF Handbook Pro Bold";
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+/* footer 2 */
+.footer2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+
+  background-color: #58595b;
+  padding: 40px 40px 40px 40px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  gap: 30em;
+  background-color: #58595b;
+  padding: 20px 40px 20px 40px;
+  border-top: 1px solid #e2e2e2;
+}
+.copy-social-text {
+  display: flex;
+  justify-content: center;
+}
+
+.copy-social-ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-left: 25px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.copy-text p {
+  color: #ffffff;
+}
+
+.copy-phone p {
+  color: #ffffff;
 }
