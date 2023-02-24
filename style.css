@@ -246,7 +246,7 @@ header {
   }
 
   .mobile-box-inner .mobile-box-image img {
-    width: 60%;
+    width: 53%;
   }
   .mobile-box-inner .burger-cross img {
     width: 30px;
@@ -274,7 +274,7 @@ header {
     background-color: #7f2221;
   }
   a.dropbtn.active {
-    background: #7f2221;
+    background: #c7222a;
   }
 
   .dropdown-content {
@@ -492,6 +492,7 @@ header {
   background: #fffdf8;
   padding: 40px 0 80px 0;
 }
+
 .image-image img {
   height: 260px;
   width: 415px;
@@ -501,6 +502,7 @@ header {
   #image-text {
     display: flex;
     flex-direction: column;
+    padding: 40px 0 20px 0;
   }
   .image-image img {
     height: 260px;
@@ -542,6 +544,7 @@ header {
 #main-banner {
   background: url(./images/Rectangle\ 370.jpg);
   background-repeat: no-repeat;
+  /* background-position: center right; */
   background-size: cover;
   padding: 80px 0 80px 0;
   align-items: center;
@@ -662,7 +665,7 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 20px 0 20px 0;
+    margin: 20px 10px 20px 10px;
     padding: 20px;
     align-items: center;
   }
@@ -744,7 +747,9 @@ header {
 .main-banner-text-space2 {
   display: flex;
   justify-content: space-around;
+  padding: 0 20px 0 20px;
 }
+
 #main-banner2 .text-text2 h2 {
   font-size: 35px;
   font-family: "PF Handbook Pro Bold";
@@ -817,10 +822,11 @@ header {
 @media only screen and (max-width: 600px) {
   .abs-boxes {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     gap: 2em;
     margin-top: 40px;
+    flex-wrap: wrap;
   }
 }
 
