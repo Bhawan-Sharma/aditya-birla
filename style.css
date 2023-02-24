@@ -202,6 +202,9 @@ header {
   .mobile-menu {
     display: none;
   }
+  .mobile-box {
+    display: none;
+  }
 }
 
 @media all and (max-width: 1100px) {
@@ -228,6 +231,12 @@ header {
     width: 40px;
   }
   /* box on click hamburger */
+  .mobile-box {
+    position: absolute;
+    display: none;
+    top: 0;
+    height: 100%;
+  }
   .mobile-box-inner {
     display: flex;
     justify-content: space-between;
@@ -264,6 +273,9 @@ header {
   .drop1-mob:hover .dropbtn {
     background-color: #7f2221;
   }
+  a.dropbtn.active {
+    background: #7f2221;
+  }
 
   .dropdown-content {
     display: none;
@@ -290,6 +302,89 @@ header {
 
   .drop1-mob:hover .dropdown-content {
     display: block;
+  }
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    height: auto;
+  }
+
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .column a:hover {
+    background-color: #ddd;
+  }
+
+  .drop1-mob .dropdown-content .column .h31 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #da9089 !important;
+  }
+  .drop1-mob .dropdown-content .column .h32 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #969f6e !important;
+  }
+  .drop1-mob .dropdown-content .column .h33 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #d4ae69 !important;
+  }
+  .drop1-mob .dropdown-content .column .h34 {
+    font-size: 24px;
+    padding: 0 0 0 10px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #c7222a !important;
+  }
+
+  .drop1-mob .dropdown-content .column1 {
+    border-left: 7px solid #da9089;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column2 {
+    border-left: 7px solid #969f6e !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column3 {
+    border-left: 7px solid #d4ae69 !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column4 {
+    border-left: 7px solid #c7222a !important;
+    margin: 0 0 20px 0;
+  }
+  .drop1-mob .dropdown-content .column5 {
+    border-top: 1px solid #ddd;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+  }
+  .drop1-mob .dropdown-content .column6 {
+    border-top: 1px solid #ddd;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+  }
+
+  .mob-menu-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4em;
   }
 }
 /* first banner css starts here */
@@ -806,9 +901,17 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 4em;
+  gap: 2em;
   margin-top: 40px;
+
   overflow-x: scroll;
+
+  animation: slideshow 10s linear infinite;
+}
+@keyframes slideshow {
+  100% {
+    transform: translateX(-33.33%);
+  }
 }
 .testm-boxes::-webkit-scrollbar {
   display: none;
