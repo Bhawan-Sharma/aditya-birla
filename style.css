@@ -745,7 +745,7 @@ header {
 @media only screen and (max-width: 600px) {
   .nps .nps-image img {
     width: 200px;
-    margin-left: -50px;
+    margin-left: -70px;
   }
   .nps-box .nps-text h2 {
     font-size: 17px;
